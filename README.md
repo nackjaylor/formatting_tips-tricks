@@ -1,9 +1,9 @@
 # UG Formatting Tips and Tricks
 Repo constructed by tutors in the School of AMME and [ACFR](https://robotics.sydney.edu.au) at the [University of Sydney](https://sydney.edu.au) with tips and tricks for formatting of formal engineering reports and assignments.
 
-Communication of ideas, results and technical content clearly and effectively is integral to engineering. Getting into good habits prior to undertaking your undergraduate thesis or entering industry will help you to ensure you can get across your work not only to those skilled in your field, but also those outside of it. Many of the semantics of this can be "set-and-forget" in that you can standardise your figures, tables and presentation such that you can focus on getting the words right on a page.
+Communication of ideas, results, and technical content clearly and effectively is integral to engineering. Getting into good habits before starting your undergraduate thesis or entering industry will help you explain your work to not only to those skilled in your field, but also those outside of it. Many of the semantics required for good formatting and communication can be "set-and-forget." For example, you can standardise your figures, tables, and presentation with nice formatting so that you can focus on getting the words right on the page.
 
-Our intention for this repo is to give you an idea of best practice with regards to formatting so you get an appreciation for how the presentation of a document affects the clarity on the readers end.
+Our intention for this repo is to give you an idea of best practice with regards to formatting so you can appreciate how the presentation of a document affects the clarity on the readers end.
 
 ## Contents
 - [Figures](#Figures)
@@ -15,6 +15,13 @@ Our intention for this repo is to give you an idea of best practice with regards
 <a name=Figures></a>
 ## Figures
 TODO
+
+They say a picture speaks a thousand words, but they often forget the caveat: *only if it's nicely formatted!* Presenting your figures in a neat and concise manner is often the difference between someone understanding what you've done, and quickly zoning out. You can imagine how important this is if you are trying to explain some results to your boss or supervisor in a short meeting.
+
+In the `matlab/` directory of this repository, you will find default plotting functions to help make your figures nice. At the start of every MATLAB session, we suggest you run `startup_plotting.m` to change the default color scheme and set label fonts to LaTeX. After creating a plot, you can run the `formatNice()` function to automatically change the font size and linewidth of all objects in the figure to a value of your choosing. This function will also set the plot background style.
+
+![matlab fig](matlab/demo.png)
+
 ### Quality Figures
 
 ### Presenting 3D Info
