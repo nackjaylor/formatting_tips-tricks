@@ -1,5 +1,5 @@
 # UG Formatting Tips and Tricks
-Repo constructed by tutors in the School of AMME and [ACFR](robotics.sydney.edu.au) at the [University of Sydney](sydney.edu.au) with tips and tricks for formatting of formal engineering reports and assignments.
+Repo constructed by tutors in the School of AMME and [ACFR](https://robotics.sydney.edu.au) at the [University of Sydney](https://sydney.edu.au) with tips and tricks for formatting of formal engineering reports and assignments.
 
 Communication of ideas, results and technical content clearly and effectively is integral to engineering. Getting into good habits prior to undertaking your undergraduate thesis or entering industry will help you to ensure you can get across your work not only to those skilled in your field, but also those outside of it. Many of the semantics of this can be "set-and-forget" in that you can standardise your figures, tables and presentation such that you can focus on getting the words right on a page.
 
