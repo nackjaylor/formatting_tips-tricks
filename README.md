@@ -14,31 +14,62 @@ Our intention for this repo is to give you an idea of best practice with regards
 
 <a name=Figures></a>
 ## Figures
-TODO
 
-They say a picture speaks a thousand words, but they often forget the caveat: *only if it's nicely formatted!* Presenting your figures in a neat and concise manner is often the difference between someone understanding what you've done, and quickly zoning out. You can imagine how important this is if you are trying to explain some results to your boss or supervisor in a short meeting.
+### Quality Figures
+They say a picture speaks a thousand words, but they often forget the caveat: *only if it's nicely formatted!* Presenting your figures in a neat and concise manner is often the difference between someone understanding what you've done, and quickly zoning out. You can imagine how important this is if you are trying to explain some results to your boss or supervisor in a short meeting. A quality figure never subtracts from a report.
 
 In the `matlab/` directory of this repository, you will find default plotting functions to help make your figures nice. At the start of every MATLAB session, we suggest you run `startup_plotting.m` to change the default color scheme and set label fonts to LaTeX. After creating a plot, you can run the `formatNice()` function to automatically change the font size and linewidth of all objects in the figure to a value of your choosing. This function will also set the plot background style.
 
 ![matlab fig](matlab/demo.png)
-
-### Quality Figures
 
 ### Presenting 3D Info
 
 ### Insets
 
 ### Captions
+If you have an image it should have a caption which gives the reader some interpretation of what is presented to them. You should have selected the figure for a purpose, and therefore will have an understanding of what you think it adds to the main body of text. It doesn't have to (and shouldn't!) be paragraphs long, but a sentence or two of clear and direct description with a link to the main body is necessary.
 
+Take the below for example:
+<div align="center"><img src="https://history.nasa.gov/ap11ann/kippsphotos/5948.jpg"></div>
+<div align="center">
+Fig. Apollo 11 on the Moon.
+  </div>
+
+
+vs.
+
+<div align="center">
+Fig. Astronauts on the Apollo 11 Lunar mission used f/0.7 lenses to image both in low light within shadows and under direct illumination from the sun. The design of sensors for planetary rovers need to deal with similar extremes in unknown environments, which presents a key challenge for engineers.
+  </div>
+  
 ### Titles/Axes
+Every graph should have a title and an axis. Some images and results containing images should similarly have titles when comparing different methods or axes when referring to specific parts of an image, or when the image has a scale/known dimension.
+
+The title and axes should be in keeping with the rest of your document: especially with font size and ideally with font type also. This means: small images, should still have appropriately sized titles/labels. Which of the below would you rather see in a book?
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/35677585/164344908-9cdc9875-d85e-4309-b13e-13ab7b7c6a54.png" width="400"/>
+  </div>
+  <div align="center">
+<img src="https://user-images.githubusercontent.com/35677585/164344916-d436fe0c-c1af-47c8-b19e-3c71d3b6bef3.png" width="400"/>
+  </div>
+  
+  Ensure your axes are scaled appropriately: for example, if there are large changes in magnitude, you may wish to use a logarithmic axis. Ensure that scaling of axes makes sense - if you have changes between measurements on the scale of centimeters, an axes measured in metres with a strange power multiplier is not appropriate.
 
 ### Graphs & Grids
+Any graph should have gridlines presented - whether it be 2D or 3D. The shape of functions and the location of key points such as minima and maxima is critical to fields like optimisation, dynamical systems and machine learning. For this reason, make it easy on your reader by providing gridlines that their eyes can follow and use to immediately locate key points of interest.
+
+Ensure that these grid lines are fine and not too dark, else they can confuse when you have several trends of data on the one plot. This is particularly important when trends end horizontal or vertical.
+
+All graphs should have a legend if they display more than one trend line, or type of data.
 
 
 <a name=Tables></a>
 ## Tables
 TODO
+### Less is More
 
+### Tools
 
 <a name=Mathematics></a>
 ## Mathematics
