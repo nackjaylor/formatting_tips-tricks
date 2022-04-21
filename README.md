@@ -66,10 +66,17 @@ All graphs should have a legend if they display more than one trend line, or typ
 
 <a name=Tables></a>
 ## Tables
-TODO
+
 ### Less is More
+Some tables can be gross. Disgustingly gross. Some can be boring and very difficult to interpret. A good rule of thumb here is: less is more. The gif below gives the best example of this that I've seen, and better than a static example I can come up with.
+
+<img src="http://static1.squarespace.com/static/56713bf4dc5cb41142f28d1f/5671e8bf816924fc22651410/5671eb1e816924fc2265196e/1450306334085/ClearOffTheTableMd.gif?format=original">
+
+This comes with a caveat: for most purposes I would follow this minimalist style as much as possible, except for when you a required to use a specific template or style of document (e.g. an IEEE Journal template). These will have examples for how the template should use a table. In this case - you must follow how the template has set it out. Everything else: make it pleasant, please.
 
 ### Tools
+
+- [Excel2LaTeX](https://github.com/ivankokan/Excel2LaTeX): Format tables in Excel in terms of colours, bolding, alignment and then convert directly to LaTeX.
 
 <a name=Mathematics></a>
 ## Mathematics
@@ -119,4 +126,13 @@ You should not have any numbers (except coefficients) until the last 2 lines of 
 A no-go unless specifically asked for. This can cause issues because text is not machine readable and cannot go through plagiarism checking software. To someone reading it, there is little to no benefit as we don't know whether the code runs or how it fits into the broader picture. Instead, if you want to explain how you implemented some code you should do so mathematically or [use a pseudocode listing](https://www.overleaf.com/learn/latex/Algorithms).
 
 ### Code for Appendices
-TODO
+Any code you submit alongside a report should be included in an appendix, and should be formatted in a way which is easily readable. This means ensuring that the code is coloured corresponding to whether a line is comments or code, similar to how VSCode, MATLAB and other programming IDEs work (unless you're a maniac who writes Assembly/FORTRAN/C/C++ code in VIM).
+
+This means you should spend some time tidying up your code for the appendix. Ideally - you shouldn't have to at all and your code is well formatted. Imagine you are working professionally and need to pass code to someone else: this is how you should document your code in the appendix of your report. The more informative your comments, variables etc. the easier it is to read.
+
+The good news is: including your code in a report is not difficult and you can customise its display so it is neat, tidy and clear. [More details can be found here.](https://www.overleaf.com/learn/latex/Code_listing)
+
+### Coding Style Resources
+
+- [Google's Styleguides](https://google.github.io/styleguide/): You should aim to follow this as closely as possible in terms of the amount of comments you need and the quality of coding style.
+- [The Good Research Code Book](https://goodresearch.dev/): You should also use this to help guide how you document your code and split it up. Research/academic code can be atrocious to read through - it's written by people who think things are easy/logical which are not. Format by this guide.
