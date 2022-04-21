@@ -63,6 +63,11 @@ Ensure that these grid lines are fine and not too dark, else they can confuse wh
 
 All graphs should have a legend if they display more than one trend line, or type of data.
 
+### Tools & Resources
+- [Matplotlib](https://matplotlib.org/): this is one you're likely very familiar with. We direct you to the [cheatsheets](https://matplotlib.org/cheatsheets/) and [tutorials](https://matplotlib.org/stable/tutorials/index) to achieve some of what we've spoken about above.
+- [Seaborn](https://seaborn.pydata.org/): an alternative to Matplotlib which gives more statistic-like plots. More granular display over appearance.
+- [Matplot++](https://github.com/alandefreitas/matplotplusplus): nice library for C++ users to get results without having to switch to a new language.
+- [ggplot2](https://ggplot2.tidyverse.org/): do you remember that one course where they told you to use R and you decided it was a rubbish language? Well it is, except for the fact it has ggplot2 under the hood which is very nice. [ggplot stands for the "grammar of graphics"](https://cfss.uchicago.edu/notes/grammar-of-graphics/) which is a kind of language for making data clear and pleasant. There's versions of this for both Python and MATLAB that are worth looking into. 
 
 <a name=Tables></a>
 ## Tables
