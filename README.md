@@ -15,7 +15,7 @@ Our intention for this repo is to give you an idea of best practice with regards
 
 <a name=Font></a>
 ## Font & Typeface
-
+Make it legible. Make it easy on the eyes (basic serif/sans serif fonts only). Choose your colours carefully. And please, we beg you: no comic sans.
 ### Resources
 - [NASA Flightdeck Documentation](https://ti.arc.nasa.gov/m/profile/adegani/Flight-Deck_Documentation.pdf): Not all fonts and colours are easy to read. This is a really interesting resource to read in full about how engineering design interacts with human psychology. If you just want the crux of it, their list of recommendations at the end is what is really necessary.
 
