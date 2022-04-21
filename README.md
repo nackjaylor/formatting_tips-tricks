@@ -29,6 +29,11 @@ In the `matlab/` directory of this repository, you will find default plotting fu
 
 ![matlab fig](matlab/demo.png)
 
+### No Screenshots of Figures or Photos of Screens
+As per the title - don't do it.
+
+For inclusion in document you should use a vector format like Encapsulated Post-Script (EPS) or PDF which will scale and not degrade with compression. Failing that, a .png at a high enough DPI is acceptable, though it can increase the size of your documents. MATLAB and Python both have these options natively.
+
 ### Presenting 3D Info
 
 ### Insets
