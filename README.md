@@ -6,11 +6,18 @@ Communication of ideas, results, and technical content clearly and effectively i
 Our intention for this repo is to give you an idea of best practice with regards to formatting so you can appreciate how the presentation of a document affects the clarity on the readers end.
 
 ## Contents
+- [Font & Typeface](#Font)
 - [Figures](#Figures)
 - [Tables](#Tables)
 - [Mathematics](#Mathematics)
 - [Calculations](#Calculations)
 - [Code](#Code)
+
+<a name=Font></a>
+## Font & Typeface
+
+### Resources
+- [NASA Flightdeck Documentation](https://ti.arc.nasa.gov/m/profile/adegani/Flight-Deck_Documentation.pdf): Not all fonts and colours are easy to read. This is a really interesting resource to read in full about how engineering design interacts with human psychology. If you just want the crux of it, their list of recommendations at the end is what is really necessary.
 
 <a name=Figures></a>
 ## Figures
