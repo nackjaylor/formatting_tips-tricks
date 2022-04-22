@@ -10,7 +10,7 @@
 % Author:   Nicholas Barbara
 % Email:    nicholas.barbara@sydney.edu.au
 
-function formatNice(fsize,lwidth,axHndl,figHndl)
+function FormatNice(fsize,lwidth,axHndl,figHndl)
 
     % Inputs
     if nargin < 1

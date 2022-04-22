@@ -6,7 +6,7 @@
 % Author:   Nicholas Barbara
 % Email:    nicholas.barbara@sydney.edu.au
 
-function startup_plotting(str)
+function StartupPlotting(str)
 
     % Inputs
     if nargin < 1
