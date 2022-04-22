@@ -72,7 +72,6 @@ end
 % Helper function to check errors
 function isTooLong(numColors,cCell,scheme)
     if numColors > length(cCell)
-        error(['Too many colors for scheme %s. ',...
-            'Use GiveMeColors.m instead, or try a different map.'],scheme);
+        error('Too many colors for scheme %s. Try a different map.',scheme);
     end
 end

@@ -53,7 +53,32 @@ For inclusion in documents you should use a vector format like Encapsulated Post
 
 ### Presenting 3D Info
 
+Remember that an image in a report can only show a projection of 3D space. The same way that cameras work, we lose an indication of scale and knowledge of unseen regions in this way. You therefore need to consider the 3D data you have carefully and the way it is best presented. 
+
+For some things like a point cloud or a mesh, maneuvring the camera so it sees as much of the 3D information as possible is a good start. This is best for data like meshes where the shape gives most of the information.
+
+One way you can help a reader to understand the 3D data more is by providing more representations of it: for example, colouring points or a mesh by normals, providing coloured and uncoloured geometry and providing the same landscape from multiple different views. The last point here is probably the most important - for complex geometry, it is often necessary to see it from a few perspectives to appreciate its shape. Similar to engineering drawings, a top, front, side and isometric view can do a good job of helping the reader to understand if you're struggling at picking your own perspectives.
+
+For complex functions in 3D, sometimes presenting them in 3D is not the best choice at all! Presenting a 2D plot which a colourmap corresponding to the value of the 3rd axis is often just as good if not better. This is often preferred for visualising optimisation landscapes, or depth maps.
+
+Some 3D data is volumetric, like hyperspectal cubes, visualising parameter space for bifurcations in dynamic systems, or configuration spaces for robotic arms. Here you need to be careful in how you present these. Presenting slices of the 3D data in the form of an image is a good way of helping people to understand what is going on inside a volume. Another good approach here is changing the opacity of data - this is especially useful when you have surfaces in 3D that are curved and have unique shapes. This means that denser data is visually more opaque, while sparser data is visually lighter.
+
 ### Insets
+Sometimes, figures need to show small changes or features within a larger context. For example, showing crowds of people in a satellite photo which is at low resolution. Not all of the original image is useful, but it helps to give context. Unfortunately, small changes are really difficult to see - and so it is your job to make these as easy as possible to find.
+
+Take for example this image taken from NASA's Ingenuity Helicopter:
+
+<div align="center">
+<img src="https://mars.nasa.gov/system/resources/detail_files/25862_PIA24625-Ingenuity-Spots-Perseverance-While-in-the-Air_a-web.jpg" width="400">
+  </div>
+
+If I just say this contains a photo of Perserverence from the air, you'd need to take a few moments to find him in there. What you can do as a neat trick is add an inset to the image, directing the readers eyes by immediately magnifying the region you want them to look at. Is it easier to find Percy in this image?
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/35677585/164578598-fb707ad4-d230-47c3-8773-46cce18d0a41.png" width="400">
+</div>
+
+This is easy to do - copy the image, crop the region you want, put a box around the region in the original image and blow up the crop to a larger size.
 
 ### Captions
 If you have an image it should have a caption which gives the reader some interpretation of what is presented to them. You should have selected the figure for a purpose, and therefore will have an understanding of what you think it adds to the main body of text. It doesn't have to (and shouldn't!) be paragraphs long, but a sentence or two of clear and direct description with a link to the main body is necessary.
