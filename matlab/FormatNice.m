@@ -34,7 +34,7 @@ function FormatNice(fsize,lwidth,axHndl,figHndl)
     % Linewidths and font size
     set(findall(figHndl, '-property', 'FontSize'), 'FontSize', fsize);
     set(findall(figHndl,'Type','Line'), 'LineWidth',lwidth);
-    % TODO add markersize
+    set(findall(figHndl,'Type','Marker'), 'MarkerSize',markerSize);
 
     % Ditch box around legend and make transparent
     leg = findobj(figHndl,'Type','Legend');
