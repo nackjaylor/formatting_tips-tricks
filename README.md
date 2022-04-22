@@ -6,12 +6,28 @@ Communication of ideas, results, and technical content clearly and effectively i
 Our intention for this repo is to give you an idea of best practice with regards to formatting so you can appreciate how the presentation of a document affects the clarity on the readers end.
 
 ## Contents
+- [LaTeX](#LaTeX)
 - [Font & Typeface](#Font)
 - [Figures](#Figures)
 - [Tables](#Tables)
 - [Mathematics](#Mathematics)
 - [Calculations](#Calculations)
 - [Code](#Code)
+
+
+<a name=LaTeX></a>
+## LaTeX
+### Use it*
+From about second year, your coursework will have some rigorous maths and will therefore require proper typesetting for clarity. For this reason you are strongly encouraged to use LaTeX for every document you produce. It is easier to manage large and long documents, takes the pain out of formatting pages of maths and ensures your document is formatted how you define it rather than how another program thinks it should be.
+
+Why the asterisk? For quick things - Google Docs or a text file will do fine. If you're writing an essay and there is no maths and pictures, and it's less than 20 pages - traditional document software will do. For presentations, you can do your slides in LaTeX using the Beamer class but it's finicky as you have too many images and isn't as dynamic as say Powerpoint. Everything else (particularly your thesis!): LaTeX - you'll thank us later.
+
+As far as we're concerned: if NASA uses it, and book publishers use it, and good academics use it, you should use it too.
+
+### Resources
+- [USYD Report Template for LaTeX](https://github.com/nackjaylor/USYDReport_Template): passed around since 2018. A good template for reports, assignments, problem sets etc. Customise it as you see fit.
+- [An Intro to LaTeX](https://www.youtube.com/watch?v=NJEnvQmWVac): a brief intro to LaTeX showing what it can do, and why it's worthwhile learning along with how to get started. [You can find the slides here](https://nackjaylor.github.io/assets/AIAALaTeX2021.pdf).
+- [TeXnique](https://texnique.xyz/): a nice game to familiarise/challenge yourself with typing maths in LaTeX and learning the symbols.
 
 <a name=Font></a>
 ## Font & Typeface
