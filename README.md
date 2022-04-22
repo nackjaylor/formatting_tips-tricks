@@ -25,6 +25,7 @@ Why the asterisk? For quick things - Google Docs or a text file will do fine. If
 As far as we're concerned: if NASA uses it, and book publishers use it, and good academics use it, you should use it too.
 
 ### Resources
+- [Overleaf](https://www.overleaf.com): the Google Docs of LaTeX. You also have a free Pro+ account with your USyd login waiting for you. If you don't need to have an offline LaTeX compiler, this is the best way to get started.
 - [USYD Report Template for LaTeX](https://github.com/nackjaylor/USYDReport_Template): passed around since 2018. A good template for reports, assignments, problem sets etc. Customise it as you see fit.
 - [An Intro to LaTeX](https://www.youtube.com/watch?v=NJEnvQmWVac): a brief intro to LaTeX showing what it can do, and why it's worthwhile learning along with how to get started. [You can find the slides here](https://nackjaylor.github.io/assets/AIAALaTeX2021.pdf).
 - [TeXnique](https://texnique.xyz/): a nice game to familiarise/challenge yourself with typing maths in LaTeX and learning the symbols.
