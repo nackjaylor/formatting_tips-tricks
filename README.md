@@ -53,7 +53,15 @@ For inclusion in documents you should use a vector format like Encapsulated Post
 
 ### Presenting 3D Info
 
-Remember that an image in a report can only show a projection of 3D space. The same way that cameras work, we lose an indication of scale and knowledge of unseen regions in this way. You therefore need to consider the 3D data you have carefully and the way it is best presented. 
+Remember that an image in a report can only show a projection of 3D space. The same way that cameras work, we lose an indication of scale and knowledge of unseen regions in this way. An example of this is shown in the image below. You therefore need to consider the 3D data you have carefully and the way it is best presented.
+
+<div align="center">
+<img src="https://pbs.twimg.com/media/FQ9mBGTXEAA0Wpc?format=jpg&name=large" width="400">
+  </div>
+
+Trajectories in 3D should have some 2D representation. As in the image above, producing a [shadow plot on one or more planes](https://matplotlib.org/stable/gallery/mplot3d/contourf3d_2.html) ([and the MATLAB equivalent](https://www.mathworks.com/matlabcentral/fileexchange/6400-shadowplot)) works well. You can also draw projections by adding new plots and multiplying each coordinate by 0 in succession, which works better for lines and points.
+
+Another way you could do this is by parameterising the whole curve between 0 and 1, and giving the x, y and z trajectories as a function of the parameter t along the length of the curve.
 
 For some things like a point cloud or a mesh, maneuvring the camera so it sees as much of the 3D information as possible is a good start. This is best for data like meshes where the shape gives most of the information.
 
