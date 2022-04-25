@@ -51,6 +51,15 @@ As per the title - don't do it.
 
 For inclusion in documents you should use a vector format like Encapsulated Post-Script (EPS) or PDF which will scale and not degrade with compression. Failing that, a .png at a high enough DPI is acceptable, though it can increase the size of your documents. MATLAB and Python both have these options natively.
 
+### Hand-drawn Diagrams
+Generally a no-go, unless asked for or there's an expectation that the assignment will be handwritten.
+
+If you are hand-drawing a diagram: make it neat, use a ruler, make it large enough to be legible. You should use pen and do it in a proper pictorial fashion regularly used by your field.
+
+If your assignment is typed, there is an expectation that any diagrams will be printed and in the format of the document provided. These are not hard to do and there are many online ways of achieving these (e.g. [draw.io](https://draw.io) is widely used to represent things pictorially for publications, and you can typeset maths). Below is an example of one of these diagrams, showing the ambiguity distance for a 2-frequency time of flight camera.
+
+![ambiguityDistance](https://user-images.githubusercontent.com/35677585/165026334-f7aff234-ed56-4203-88ee-21d4f76929ba.png)
+
 ### Presenting 3D Info
 
 Remember that an image in a report can only show a projection of 3D space. The same way that cameras work, we lose an indication of scale and knowledge of unseen regions in this way. An example of this is shown in the image below. You therefore need to consider the 3D data you have carefully and the way it is best presented.
@@ -130,6 +139,7 @@ All graphs should have a legend if they display more than one trend line, or typ
 - [Seaborn](https://seaborn.pydata.org/): an alternative to Matplotlib which gives more statistic-like plots. More granular display over appearance.
 - [Matplot++](https://github.com/alandefreitas/matplotplusplus): nice library for C++ users to get results without having to switch to a new language.
 - [ggplot2](https://ggplot2.tidyverse.org/): do you remember that one course where they told you to use R and you decided it was a rubbish language? Well it is, except for the fact it has ggplot2 under the hood which is very nice. [ggplot stands for the "grammar of graphics"](https://cfss.uchicago.edu/notes/grammar-of-graphics/) which is a kind of language for making data clear and pleasant. There's versions of this for both Python and MATLAB that are worth looking into. 
+- [draw.io](https://draw.io): free online diagram maker. You can render mathematics and have 3D blocks. Able to produce publication quality diagrams.
 
 <a name=Tables></a>
 ## Tables
