@@ -20,7 +20,7 @@ Our intention for this repo is to give you an idea of best practice with regards
 ### Use it*
 From about second year, your coursework will have some rigorous maths and will therefore require proper typesetting for clarity. For this reason you are strongly encouraged to use LaTeX for every document you produce. It is easier to manage large and long documents, takes the pain out of formatting pages of maths and ensures your document is formatted how you define it rather than how another program thinks it should be.
 
-Why the asterisk? For quick things - Google Docs or a text file will do fine. If you're writing an essay and there is no maths and pictures, and it's less than 20 pages - traditional document software will do. For presentations, you can do your slides in LaTeX using the Beamer class but it's finicky as you have too many images and isn't as dynamic as say Powerpoint. Everything else (particularly your thesis!): LaTeX - you'll thank us later.
+Why the asterisk? For quick things - Google Docs or a text file will do fine. If you're writing an essay and there is no maths and pictures, and it's less than 20 pages - traditional document software will do. For presentations, you can do your slides in LaTeX using the Beamer class but it's finicky as you have too many images and isn't as dynamic as say PowerPoint. Everything else (particularly your thesis!): LaTeX - you'll thank us later.
 
 As far as we're concerned: if NASA uses it, and book publishers use it, and good academics use it, you should use it too.
 
