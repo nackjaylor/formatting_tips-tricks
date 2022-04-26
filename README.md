@@ -97,6 +97,8 @@ If I just say this contains a photo of Perserverence from the air, you'd need to
 
 This is easy to do - copy the image, crop the region you want, put a box around the region in the original image and blow up the crop to a larger size.
 
+An important thing to note: never cover important parts of an image/plot. Take the inset outside the axis bounds if needs be, but don't cover data or interesting things.
+
 ### Captions
 If you have an image it should have a caption which gives the reader some interpretation of what is presented to them. You should have selected the figure for a purpose, and therefore will have an understanding of what you think it adds to the main body of text. It doesn't have to (and shouldn't!) be paragraphs long, but a sentence or two of clear and direct description with a link to the main body is necessary.
 
@@ -132,7 +134,7 @@ Any graph should have gridlines presented - whether it be 2D or 3D. The shape of
 
 Ensure that these grid lines are fine and not too dark, else they can confuse when you have several trends of data on the one plot. This is particularly important when trends end horizontal or vertical.
 
-All graphs should have a legend if they display more than one trend line, or type of data.
+All graphs should have a legend if they display more than one trend line, or type of data. As with insets, do not let this cover data from your plot: take it outside the axis bounds if needs be.
 
 ### Tools & Resources
 - [Matplotlib](https://matplotlib.org/): this is one you're likely very familiar with. We direct you to the [cheatsheets](https://matplotlib.org/cheatsheets/) and [tutorials](https://matplotlib.org/stable/tutorials/index) to achieve some of what we've spoken about above.
@@ -205,9 +207,11 @@ A no-go unless specifically asked for. This can cause issues because text is not
 ### Do it once, do it well
 If you find yourself writing the same code more than once, or copying large chunks of it - you are doing something wrong. If it's used more than once, you should have it as a function in your code.
 
-This can be extended to templated functions: particularly in C++. You want to write sections of code that are *as general as you can possibly make them*. This means, they should be designed to handle any valid form of data you can throw that them. This means: integers, floats, doubles, long equivalents etc. should ideally all be handled by the same code. Good code design here checks that the input is sensible: for example, you don't want complex numbers when functions should be in the real domain. This helps you catch bugs early, numerically speaking, and cleans up your code significantly.
+This can be extended to templated functions: particularly in C++. You want to write sections of code that are *as general as you can possibly make them*. This means, they should be designed to handle any valid form of data you can throw that them. This means: integers, floats, doubles, long equivalents etc. should ideally all be handled by the same code. Good code design here checks that the input is sensible: for example, you don't want complex numbers when functions should be in the real domain. You might find MATLAB's [argument validation functionality](https://au.mathworks.com/help/matlab/ref/arguments.html) worthwhile in helping to pick this up. This helps you catch bugs early, numerically speaking, and cleans up your code significantly.
 
 A natural extension here is recursion - calling the function inside of itself. This has immense speed benefits, but fails spectacularly when not handled well. You should use recursion, but you should ensure it is robust. If you're not confident with this, do it the old fashioned way.
+
+
 
 ### Code for Appendices
 Any code you submit alongside a report should be included in an appendix, and should be formatted in a way which is easily readable. This means ensuring that the code is coloured corresponding to whether a line is comments or code, similar to how VSCode, MATLAB and other programming IDEs work (unless you're a maniac who writes Assembly/FORTRAN/C/C++ code in VIM).
