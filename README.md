@@ -202,6 +202,13 @@ You should not have any numbers (except coefficients) until the last 2 lines of 
 ### Screenshots of code/terminals
 A no-go unless specifically asked for. This can cause issues because text is not machine readable and cannot go through plagiarism checking software. To someone reading it, there is little to no benefit as we don't know whether the code runs or how it fits into the broader picture. Instead, if you want to explain how you implemented some code you should do so mathematically or [use a pseudocode listing](https://www.overleaf.com/learn/latex/Algorithms).
 
+### Do it once, do it well
+If you find yourself writing the same code more than once, or copying large chunks of it - you are doing something wrong. If it's used more than once, you should have it as a function in your code.
+
+This can be extended to templated functions: particularly in C++. You want to write sections of code that are *as general as you can possibly make them*. This means, they should be designed to handle any valid form of data you can throw that them. This means: integers, floats, doubles, long equivalents etc. should ideally all be handled by the same code. Good code design here checks that the input is sensible: for example, you don't want complex numbers when functions should be in the real domain. This helps you catch bugs early, numerically speaking, and cleans up your code significantly.
+
+A natural extension here is recursion - calling the function inside of itself. This has immense speed benefits, but fails spectacularly when not handled well. You should use recursion, but you should ensure it is robust. If you're not confident with this, do it the old fashioned way.
+
 ### Code for Appendices
 Any code you submit alongside a report should be included in an appendix, and should be formatted in a way which is easily readable. This means ensuring that the code is coloured corresponding to whether a line is comments or code, similar to how VSCode, MATLAB and other programming IDEs work (unless you're a maniac who writes Assembly/FORTRAN/C/C++ code in VIM).
 
