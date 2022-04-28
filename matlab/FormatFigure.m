@@ -25,7 +25,7 @@ function FormatFigure(figHandle,axisLabels,varargin)
     % set the parameters
     fontSize = 16;
     lineWidth = 2;
-    markerSize = 30;
+%     markerSize = 30;
     legend = 0;
     plotDimensions = length(axisLabels); % TODO: FIX: numel(axes(figHandle))/2; % checks if it's 2D or 3D
     
@@ -74,5 +74,5 @@ function FormatFigure(figHandle,axisLabels,varargin)
     
     % Format markers and lines
     set(findall(figHandle,'Type','Line'), 'LineWidth',lineWidth);
-    set(findall(figHandle,'Type','Marker'), 'MarkerSize',markerSize);
+%     set(findall(figHandle,'Type','Marker'), 'MarkerSize',markerSize);
 end

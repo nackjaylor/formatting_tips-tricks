@@ -3,7 +3,7 @@
 %
 % INPUTS:
 %   - fsize:    (Numeric) Font size. Default 16.
-%   - lwidth:   (Numeric) Line Width. Default 1.5.
+%   - lwidth:   (Numeric) Line width. Default 1.5.
 %   - axHndl:   (Axes) Axis handle. Default from axHndl = gca.
 %   - figHndl:  (Figure) Figure handle. Default from figHndl = gcf.
 %
@@ -19,10 +19,10 @@ function FormatNice(fsize,lwidth,axHndl,figHndl)
     if nargin < 2
         lwidth = 1.5;
     end
-    if nargin < 3
+    if nargin < 4
         axHndl = gca;
     end
-    if nargin < 4
+    if nargin < 5
         figHndl = gcf;
     end
 
@@ -33,8 +33,9 @@ function FormatNice(fsize,lwidth,axHndl,figHndl)
 
     % Linewidths and font size
     set(findall(figHndl, '-property', 'FontSize'), 'FontSize', fsize);
-    set(findall(figHndl,'Type','Line'), 'LineWidth',lwidth);
-    set(findall(figHndl,'Type','Marker'), 'MarkerSize',markerSize);
+    set(findall(figHndl,'Type','Line'), 'LineWidth', lwidth);
+    %     set(findall(figHandle,'Type','Marker'), 'MarkerSize',markerSize);
+    %     TODO: Add marker size configuration
 
     % Ditch box around legend and make transparent
     leg = findobj(figHndl,'Type','Legend');
