@@ -42,7 +42,7 @@ Make it legible. Make it easy on the eyes (basic serif/sans serif fonts only). C
 ### Quality Figures
 They say a picture speaks a thousand words, but they often forget the caveat: *only if it's nicely formatted!* Presenting your figures in a neat and concise manner is often the difference between someone understanding what you've done, and quickly zoning out. You can imagine how important this is if you are trying to explain some results to your boss or supervisor in a short meeting. A quality figure never subtracts from a report.
 
-In the `matlab/` directory of this repository, you will find default plotting functions to help make your figures nice. At the start of every MATLAB session, we suggest you run `startup_plotting.m` to change the default color scheme and set label fonts to LaTeX. After creating a plot, you can run the `formatNice()` function to automatically change the font size and linewidth of all objects in the figure to a value of your choosing. This function will also set the plot background style.
+In the `matlab/` directory of this repository, you will find default plotting functions to help make your figures nice. At the start of every MATLAB session, we suggest you run `startup_plotting.m` to change the default color scheme and set label fonts to LaTeX. After creating a plot, you can run the `formatNice()` function to automatically change the font size and linewidth of all objects in the figure to a value of your choosing. This function will also set the plot background style. Alternatively, the standalone file and function 'FormatFigure()' can be used after plotting to achieve a similar result.
 
 ![matlab fig](matlab/demo.png)
 
