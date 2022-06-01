@@ -36,7 +36,8 @@ def startup_plotting(font_size=16,line_width=1.5,output_dpi=300,tex_backend=Fals
 
     # Turn on axes grids.
     plt.rcParams.update({"axes.grid" : True, 
-                        "legend.frameon": False,
+                        "legend.framealpha": 1,
+                        "legend.edgecolor": [1,1,1],
                         "lines.linewidth": line_width,
                         "savefig.dpi": output_dpi,
                         "savefig.format": 'pdf'})
