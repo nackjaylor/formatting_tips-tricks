@@ -44,7 +44,12 @@ They say a picture speaks a thousand words, but they often forget the caveat: *o
 
 In the `matlab/` directory of this repository, you will find default plotting functions to help make your figures nice. At the start of every MATLAB session, we suggest you run `startup_plotting.m` to change the default color scheme and set label fonts to LaTeX. After creating a plot, you can run the `formatNice()` function to automatically change the font size and linewidth of all objects in the figure to a value of your choosing. This function will also set the plot background style. Alternatively, the standalone file and function `FormatFigure()` can be used after plotting to achieve a similar result.
 
+
+
 ![matlab fig](matlab/demo.png)
+
+
+In the `python/` folder you will find a `format_figures.py` module with a `startup_plotting` function to achieve similar defaults. Note here that in order to do LaTeX formatting, you will need an installed LaTeX distribution (TeXlive for those on Linux is a great option!).
 
 ### No Screenshots of Figures or Photos of Screens
 As per the title - don't do it.
@@ -58,7 +63,10 @@ If you are hand-drawing a diagram: make it neat, use a ruler, make it large enou
 
 If your assignment is typed, there is an expectation that any diagrams will be printed and in the format of the document provided. These are not hard to do and there are many online ways of achieving these (e.g. [draw.io](https://draw.io) is widely used to represent things pictorially for publications, and you can typeset maths). Below is an example of one of these diagrams, showing the ambiguity distance for a 2-frequency time of flight camera.
 
+
+
 ![ambiguityDistance](https://user-images.githubusercontent.com/35677585/165026334-f7aff234-ed56-4203-88ee-21d4f76929ba.png)
+
 
 ### Presenting 3D Info
 
@@ -142,6 +150,7 @@ All graphs should have a legend if they display more than one trend line, or typ
 - [Matplot++](https://github.com/alandefreitas/matplotplusplus): nice library for C++ users to get results without having to switch to a new language.
 - [ggplot2](https://ggplot2.tidyverse.org/): do you remember that one course where they told you to use R and you decided it was a rubbish language? Well it is, except for the fact it has ggplot2 under the hood which is very nice. [ggplot stands for the "grammar of graphics"](https://cfss.uchicago.edu/notes/grammar-of-graphics/) which is a kind of language for making data clear and pleasant. There's versions of this for both Python and MATLAB that are worth looking into. 
 - [draw.io](https://draw.io): free online diagram maker. You can render mathematics and have 3D blocks. Able to produce publication quality diagrams.
+- [Scientific Visualisation with Python](https://github.com/rougier/scientific-visualization-book): Great free book all about customising Python + Matplotlib to be visually appealing, and give you really strong visual results. Well worth a flick through.
 
 <a name=Tables></a>
 ## Tables
@@ -149,7 +158,9 @@ All graphs should have a legend if they display more than one trend line, or typ
 ### Less is More
 Some tables can be gross. Disgustingly gross. Some can be boring and very difficult to interpret. A good rule of thumb here is: less is more. The gif below gives the best example of this that I've seen, and better than a static example I can come up with.
 
+<div align="center">
 <img src="http://static1.squarespace.com/static/56713bf4dc5cb41142f28d1f/5671e8bf816924fc22651410/5671eb1e816924fc2265196e/1450306334085/ClearOffTheTableMd.gif?format=original">
+ </div>
 
 This comes with a caveat: for most purposes I would follow this minimalist style as much as possible, except for when you a required to use a specific template or style of document (e.g. an IEEE Journal template). These will have examples for how the template should use a table. In this case - you must follow how the template has set it out. Everything else: make it pleasant, please.
 
@@ -163,20 +174,26 @@ This comes with a caveat: for most purposes I would follow this minimalist style
 ### Functions Vs. Variables
 As your notation gets more complex, you increasingly find yourself needing to use new variables. Someone reading your work therefore needs to quickly understand what the variables in each equation are. Functions are often denoted by several letters, and it can get very confusing which variables are variables and which are functions if you're lazy and don't distinguish them. Take the example below:
 
-<img src="https://latex.codecogs.com/png.image?\dpi{120}\bg{white}sin(x)=s\times&space;i\times&space;n(x)&space;\neq&space;\sin(x)">
+
+$$ sin(x) = s \times i \times n(x) \neq \sin(x) $$
+
+<!-- <img src="https://latex.codecogs.com/png.image?\dpi{120}\bg{white}sin(x)=s\times&space;i\times&space;n(x)&space;\neq&space;\sin(x)"> -->
 
 It is clear here what we mean - but it could be confusing if you use the letters "s", "i" and a function "n(x)" elsewhere in your manuscript. For this reason, any user defined functions (sign, heaviside, trigonometric functions, argmin/argmax etc.) or common functions (sin, cos, tan) should be positioned upright. This is as simple as adding a backslash before the command if the functions are found in a package. If not, you can define your own or use the `\mathrm{name}` command to remove the italics from the block.
 
 This should only be done for functions whose names are more than one letter long, for example it is perfectly fine to denote the below:
 
-<img src="https://latex.codecogs.com/png.image?\dpi{120}\bg{white}f(x)=\sin(x)">
+$$ f(x) = \sin(x) $$
+<!-- <img src="https://latex.codecogs.com/png.image?\dpi{120}\bg{white}f(x)=\sin(x)"> -->
 
 ### Precise Choice of Operators
 Some operators don't mean what you think they mean. For example:
 
-<img src="https://latex.codecogs.com/png.image?\dpi{120}\bg{white}A*b&space;\neq&space;A&space;\times&space;b&space;\neq&space;Ab">
+$$ A * b \neq A \times b \neq A \cdot b \neq Ab $$
 
-If you're still early in your studies, these look to be equivalent. In actuality, the first expression is often used to denote a convolution between A and b, the second a cross product and finally a matrix multiplication between A and b. It is very important that you make your notation clear and correct: choose your operators precisely and carefully, making note of what is standard in the field you're working in.
+<!-- <img src="https://latex.codecogs.com/png.image?\dpi{120}\bg{white}A*b&space;\neq&space;A&space;\times&space;b&space;\neq&space;Ab"> -->
+
+If you're still early in your studies, these look to be equivalent. In actuality, the first expression is often used to denote a convolution between A and b, the second a cross product, then a dot product and finally a matrix multiplication between A and b. It is very important that you make your notation clear and correct: choose your operators precisely and carefully, making note of what is standard in the field you're working in.
 
 A good rule is to not use any operator for a multiplication (matrix or scalar). Ensure you check your notation thoroughly playing a mathematical [Devil's Advocate](https://en.wikipedia.org/wiki/Devil%27s_advocate) with each line of working.
 
