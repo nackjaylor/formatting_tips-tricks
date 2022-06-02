@@ -210,6 +210,19 @@ Units should be included for any quantity that has a physical meaning. The units
 
 A package highly recommended for this is the [siunitx package](https://mirror.aarnet.edu.au/pub/CTAN/macros/latex/contrib/siunitx/siunitx.pdf) where you can use pre-defined units (or units you've defined) to standardise the formatting. It also forces you to double check the dimensions of the final value by inputting the unit name.
 
+### Scientific (Engineering) Notation
+Pretend for a moment you are doing calculations on the size of a slit in a sheet of paper needed for form a diffraction pattern using a laser. This is very small! You get that the size of the slit needs to be on the order of $10^{-5}$ m. Do you add a bunch of zeros after a decimal point and the numbers from your calculator? Giving something like this?
+
+$$ D = 0.00004268762\text{ }\mathrm{m} $$
+
+Hopefully, you think not. It would be much more elgant to say: $D = 4.2688\times10^{-5}$ m. This is fine, but we are engineers, and we can only count in multiples of 3.
+
+For SI units there are standard multiples of thousands which we are interested in. Ideally, you actually say this: $D = 42.688\times 10^{-6}\text{ }\mathrm{m} = 42.688\text{ }\mathrm{\mu m}$ i.e. micrometers.
+
+I think intermediate answers of consequence should be presented in scientific notation, and final key results should be in engineering notation (either powers of $10^3$ or with a common unit prefix).
+
+How many decimal points should you leave? A good question - you should be consistent however you choose. You could be consistent in number of significant figures (4 would be a good number). Or you could be consistent in number of decimals (3 or 4 are generally a good number). You don't want to select something with too few decimals, else small changes in data cannot be compared easily, but you also don't want to give so many decimal points that are magnitudes smaller than the data we are interested in.
+
 ### Evaluation & Substitution
 This should go without saying but - only substitute at the last step. Working through a calculation with a mix of values and variables gets messy, particularly when you cancel things out.
 
