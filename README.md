@@ -8,6 +8,7 @@ Our intention for this repo is to give you an idea of best practice with regards
 ## Contents
 - [LaTeX](#LaTeX)
 - [Font & Typeface](#Font)
+- [Citationsand Cross-Referencing](#Citations)
 - [Figures](#Figures)
 - [Tables](#Tables)
 - [Mathematics](#Mathematics)
@@ -24,6 +25,8 @@ Why the asterisk? For quick things - Google Docs or a text file will do fine. If
 
 As far as we're concerned: if NASA uses it, and book publishers use it, and good academics use it, you should use it too.
 
+We'll assume for the rest of this document that you've made the decision to use LaTeX, as there's a lot of tricks to save you time which we will cover.
+
 ### Resources
 - [Overleaf](https://www.overleaf.com): the Google Docs of LaTeX. You also have a free Pro+ account with your USyd login waiting for you. If you don't need to have an offline LaTeX compiler, this is the best way to get started.
 - [USYD Report Template for LaTeX](https://github.com/nackjaylor/USYDReport_Template): passed around since 2018. A good template for reports, assignments, problem sets etc. Customise it as you see fit. Only use if the report does not specify a template.
@@ -35,6 +38,35 @@ As far as we're concerned: if NASA uses it, and book publishers use it, and good
 Make it legible. Make it easy on the eyes (basic serif/sans serif fonts only). Choose your colours carefully. And please, we beg you: no comic sans.
 ### Resources
 - [NASA Flightdeck Documentation](https://ti.arc.nasa.gov/m/profile/adegani/Flight-Deck_Documentation.pdf): Not all fonts and colours are easy to read. This is a really interesting resource to read in full about how engineering design interacts with human psychology. If you just want the crux of it, their list of recommendations at the end is what is really necessary.
+
+<a name=Citations></a>
+## Citations and Cross-Referencing
+
+### Which citation style?
+The age old question - and it depends on what you're writing for.
+
+Most of your engineering reports should be fine with numbered references in IEEE format (i.e. boxes in text like this [4]). For some things like essays, you may need to change to a more appropriate style. Here, Harvard may be more acceptable - but it depends on your discipline.
+
+If no referencing style is specified, and it's an engineering course - you're safe with IEEE.
+
+### How do I use a citation style?
+Most citation styles have a guide for how they're used. For example - [IEEE publishes a comprehensive guide](https://ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf). These are long and arduous, but well worth a skim just to make sure you're doing it correctly.
+
+Luckily - many citation styles publish a BibTeX style which automates a process, provided you format your bib file correctly.
+
+### Cross-referencing
+If you are working through a solution, and you wish to use a result from earlier or talk specifically about a prior equation or figure or section you will need to let the reader know exactly what you are referring to. Re-writing it or writing a reminder for the reader is inefficient - so you should be telling the reader where they can find the info again if they need a refresher.
+
+Imagine you type out in your thesis "In Eq. 1.2 we provide the result for the Schwarzschild radius of a black hole" during the first draft. Six months later, you submit and celebrate and have your thesis printed because of how proud you are. Reading through with your family you re-read that line and flick pack 26 pages to Eq 1.2... only now it is the equation for the heat flux needed to bake a cake! Oh no, you added an equation and now your text no longer lines up - how silly you look!
+
+This could have been avoided if you had added `\label{eq:schwarzschild}` and then used "In Eq.~\ref{eq:schwarzschild}..." within the equation block. This is known as cross-referencing and LaTeX allows you to programmatically reference sections which update as you change the content of your document.
+
+Where you have figures or equations or sections you refer to, you should be cross referencing to let the reader know exactly what you are talking about, without duplicating. Doing this programmatically is critical for clarity.
+
+### Resources
+- [IEEEtran bib style](https://www.bibtex.com/s/bibliography-style-ieeetran-ieeetran/): Link to the BibTeX website for access to the IEEEtran style. Another reason why you should use LaTeX!
+- [hyperref](https://ctan.org/pkg/hyperref?lang=en): LaTeX package which adds hyperlinks to your references, allowing someone to check links from your document - nice and handy to have!
+- [cleveref](https://ctan.org/pkg/cleveref?lang=en): LaTeX package which enables you to cleverly cross reference equations, images, sections, chapters etc.
 
 <a name=Figures></a>
 ## Figures
@@ -239,7 +271,7 @@ If you find yourself writing the same code more than once, or copying large chun
 
 This can be extended to templated functions: particularly in C++. You want to write sections of code that are *as general as you can possibly make them*. This means, they should be designed to handle any valid form of data you can throw that them. This means: integers, floats, doubles, long equivalents etc. should ideally all be handled by the same code. Good code design here checks that the input is sensible: for example, you don't want complex numbers when functions should be in the real domain. You might find MATLAB's [argument validation functionality](https://au.mathworks.com/help/matlab/ref/arguments.html) worthwhile in helping to pick this up. This helps you catch bugs early, numerically speaking, and cleans up your code significantly.
 
-A natural extension here is recursion - calling the function inside of itself. This has immense speed benefits, but fails spectacularly when not handled well. You should use recursion, but you should ensure it is robust. If you're not confident with this, do it the old fashioned way.
+A natural extension here is recursion - calling the function inside of itself. This has immense speed benefits in Python (not necessarily C++ or other compiled languages), but fails spectacularly when not handled well. You should use recursion if appropriate, but you should ensure it is robust. If you're not confident with this, do it the old fashioned way.
 
 
 
@@ -250,8 +282,21 @@ This means you should spend some time tidying up your code for the appendix. Ide
 
 The good news is: including your code in a report is not difficult and you can customise its display so it is neat, tidy and clear. [More details can be found here.](https://www.overleaf.com/learn/latex/Code_listing)
 
+### Documentation
+If code is uncommented or undocumented it is largely useless. If no one knows why it works, then they're not sure why it doesn't work. Comments need not be exhaustive, however they should be clear and point towards rationale and resources; why it was written, what it does and where it comes from. Obscure equation factorisations which allow code to be executed in $\mathcal{O}(1)$ are likely to be overwritten if no one understands what they do.
+
+If you're not sure how exhaustive your comments should be, lean on the side of clarity: write as much as you think someone needs to just rewrite the function from scratch if the code went missing.
+
+### Reproducability
+Sometimes computers don't operate with the same instructions given the same code. A good example of this is if you use really old programs (poorly) designed for high performance and compile them from scratch on a Linux system sometimes they will say there are "invalid instructions" and exit with an error. The code has not changed - but the hardware has, and optimisations designed to run on old processors may not exist anymore. More commonly open source packages will be updated and have tiny bugs fixed which can change performance and accuracy of code written on top of them. 
+
+With academic code - differences between what is published and results you get on your machine happens more than you might think. For this reason, tools like [conda](https://docs.conda.io/en/latest/) are very useful in allowing you to export exactly what configuration of packages existed in an environment. This is a habit you should get into early on, particularly for major projects involving code. It is in essence a different sort of documentation - documenting exactly what environment the code worked on, so no one can yell at you if it doesn't work on Ubuntu 12.04 using Python 1.7 and GCC 2.0.1.
+
+An aside: if you do come across old code which no longer works (or code for a different OS) - [a Docker environment](https://www.docker.com/) can be configured to recreate operating systems inside of a host machine.
+
 ### Coding Style Resources
 
 - [Google's Styleguides](https://google.github.io/styleguide/): You should aim to follow this as closely as possible in terms of the amount of comments you need and the quality of coding style.
 - [The Good Research Code Book](https://goodresearch.dev/): You should also use this to help guide how you document your code and split it up. Research/academic code can be atrocious to read through - it's written by people who think things are easy/logical which are not. Format by this guide.
 - [Cookiecutter for Project Templates](https://github.com/cookiecutter/cookiecutter): If you don't have your own project templates for C++/Python/C etc. this is a good way to get some existing templates which are more modern. Some of the old Google project templates for C++ are good too: [projects](https://code.google.com/archive/p/cpp-project-template/) and [libraries](https://code.google.com/archive/p/cpp-library-project-template/).
+- [Robostack - Reproducability for Robotics](https://robostack.github.io/):  If you're writing major projects, you may wish to consider the reproducability of your environment across platforms and development environments.
