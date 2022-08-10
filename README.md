@@ -8,7 +8,7 @@ Our intention for this repo is to give you an idea of best practice with regards
 ## Contents
 - [LaTeX](#LaTeX)
 - [Font & Typeface](#Font)
-- [Citationsand Cross-Referencing](#Citations)
+- [Citations and Cross-Referencing](#Citations)
 - [Figures](#Figures)
 - [Tables](#Tables)
 - [Mathematics](#Mathematics)
@@ -57,7 +57,7 @@ Luckily - many citation styles publish a BibTeX style which automates a process,
 ### Cross-referencing
 If you are working through a solution, and you wish to use a result from earlier or talk specifically about a prior equation or figure or section you will need to let the reader know exactly what you are referring to. Re-writing it or writing a reminder for the reader is inefficient - so you should be telling the reader where they can find the info again if they need a refresher.
 
-Imagine you type out in your thesis "In Eq. 1.2 we provide the result for the Schwarzschild radius of a black hole" during the first draft. Six months later, you submit and celebrate and have your thesis printed because of how proud you are. Reading through with your family you re-read that line and flick pack 26 pages to Eq 1.2... only now it is the equation for the heat flux needed to bake a cake! Oh no, you added an equation and now your text no longer lines up - how silly you look!
+Imagine you type out in your thesis "In Eq. 1.2 we provide the result for the Schwarzschild radius of a black hole" during the first draft. Six months later, you submit and celebrate and have your thesis printed because of how proud you are. Reading through with your family you re-read that line and flick back 26 pages to Eq 1.2... only now it is the equation for the heat flux needed to bake a cake! Oh no, you added an equation and now your text no longer lines up - how silly you look!
 
 This could have been avoided if you had added `\label{eq:schwarzschild}` and then used "In Eq.~\ref{eq:schwarzschild}..." within the equation block. This is known as cross-referencing and LaTeX allows you to programmatically reference sections which update as you change the content of your document.
 
@@ -266,6 +266,8 @@ You should not have any numbers (except coefficients) until the last 2 lines of 
 ### Screenshots of code/terminals
 A no-go unless specifically asked for. This can cause issues because text is not machine readable and cannot go through plagiarism checking software. To someone reading it, there is little to no benefit as we don't know whether the code runs or how it fits into the broader picture. Instead, if you want to explain how you implemented some code you should do so mathematically or [use a pseudocode listing](https://www.overleaf.com/learn/latex/Algorithms).
 
+If it is specifically asked for - screenshots are still not recommended! Use a code block with indicative output formatted *like* a terminal: much easier to follow and highlightable within a document. Use [Google's command-line syntax](https://developers.google.com/style/code-syntax) as best practice.
+
 ### Do it once, do it well
 If you find yourself writing the same code more than once, or copying large chunks of it - you are doing something wrong. If it's used more than once, you should have it as a function in your code.
 
@@ -300,3 +302,4 @@ An aside: if you do come across old code which no longer works (or code for a di
 - [The Good Research Code Book](https://goodresearch.dev/): You should also use this to help guide how you document your code and split it up. Research/academic code can be atrocious to read through - it's written by people who think things are easy/logical which are not. Format by this guide.
 - [Cookiecutter for Project Templates](https://github.com/cookiecutter/cookiecutter): If you don't have your own project templates for C++/Python/C etc. this is a good way to get some existing templates which are more modern. Some of the old Google project templates for C++ are good too: [projects](https://code.google.com/archive/p/cpp-project-template/) and [libraries](https://code.google.com/archive/p/cpp-library-project-template/).
 - [Robostack - Reproducability for Robotics](https://robostack.github.io/):  If you're writing major projects, you may wish to consider the reproducability of your environment across platforms and development environments.
+- [Extra documentation in documents](https://developers.google.com/style): To document how someone might use what you've built you usually put together a kind a manual. This is a good reference for how to put this together for code and to show in a document how one might use your program. 
