@@ -183,6 +183,7 @@ All graphs should have a legend if they display more than one trend line, or typ
 - [ggplot2](https://ggplot2.tidyverse.org/): do you remember that one course where they told you to use R and you decided it was a rubbish language? Well it is, except for the fact it has ggplot2 under the hood which is very nice. [ggplot stands for the "grammar of graphics"](https://cfss.uchicago.edu/notes/grammar-of-graphics/) which is a kind of language for making data clear and pleasant. There's versions of this for both Python and MATLAB that are worth looking into. 
 - [draw.io](https://draw.io): free online diagram maker. You can render mathematics and have 3D blocks. Able to produce publication quality diagrams.
 - [Scientific Visualisation with Python](https://github.com/rougier/scientific-visualization-book): Great free book all about customising Python + Matplotlib to be visually appealing, and give you really strong visual results. Well worth a flick through.
+- [Repeatable plotting with Pylustrator](https://pylustrator.readthedocs.io/en/latest/): If you're making a plot, it's often hard to configure in terms of code, and hard to reconfigure if you don't save it. Pylustrator is a handy package where you can use a GUI to configure subplots and then write a script to reproduce that plot exactly.
 
 <a name=Tables></a>
 ## Tables
