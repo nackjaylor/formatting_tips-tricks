@@ -3,9 +3,7 @@ Repo constructed by tutors in the School of AMME and [ACFR](https://robotics.syd
 
 Communication of ideas, results, and technical content clearly and effectively is integral to engineering. Getting into good habits before starting your undergraduate thesis or entering industry will help you explain your work to not only to those skilled in your field, but also those outside of it. Many of the semantics required for good formatting and communication can be "set-and-forget." For example, you can standardise your figures, tables, and presentation with nice formatting so that you can focus on getting the words right on the page.
 
-Our intention for this repo is to give you an idea of best practice with regards to formatting so you can appreciate how the presentation of a document affects the clarity on the readers end.
-
-We've also added [a guide on design report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md), commonly applicable to engineering assignments.
+Our intention for this repo is to give you an idea of best practice with regards to formatting so you can appreciate how the presentation of a document affects the clarity on the readers end. We've also added [a guide on design report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md), commonly applicable to engineering assignments.
 
 ## Contents
 - [LaTeX](#LaTeX)
