@@ -5,6 +5,8 @@ Communication of ideas, results, and technical content clearly and effectively i
 
 Our intention for this repo is to give you an idea of best practice with regards to formatting so you can appreciate how the presentation of a document affects the clarity on the readers end.
 
+We've also added a guide on design report writing, commonly applicable to engineering assignments, which can be found [here](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md).
+
 ## Contents
 - [LaTeX](#LaTeX)
 - [Font & Typeface](#Font)
