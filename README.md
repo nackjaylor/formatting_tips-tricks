@@ -5,7 +5,7 @@ Communication of ideas, results, and technical content clearly and effectively i
 
 Our intention for this repo is to give you an idea of best practice with regards to formatting so you can appreciate how the presentation of a document affects the clarity on the readers end.
 
-We've also added a guide on design report writing, commonly applicable to engineering assignments, which can be found [here](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md).
+We've also added [a guide on design report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md), commonly applicable to engineering assignments.
 
 ## Contents
 - [LaTeX](#LaTeX)
@@ -16,6 +16,7 @@ We've also added a guide on design report writing, commonly applicable to engine
 - [Mathematics](#Mathematics)
 - [Calculations](#Calculations)
 - [Code](#Code)
+- [Report Content](#Content)
 
 
 <a name=LaTeX></a>
@@ -306,3 +307,7 @@ An aside: if you do come across old code which no longer works (or code for a di
 - [Cookiecutter for Project Templates](https://github.com/cookiecutter/cookiecutter): If you don't have your own project templates for C++/Python/C etc. this is a good way to get some existing templates which are more modern. Some of the old Google project templates for C++ are good too: [projects](https://code.google.com/archive/p/cpp-project-template/) and [libraries](https://code.google.com/archive/p/cpp-library-project-template/).
 - [Robostack - Reproducability for Robotics](https://robostack.github.io/):  If you're writing major projects, you may wish to consider the reproducability of your environment across platforms and development environments.
 - [Extra documentation in documents](https://developers.google.com/style): To document how someone might use what you've built you usually put together a kind a manual. This is a good reference for how to put this together for code and to show in a document how one might use your program. 
+
+<a name=Content></a>
+## Report Content
+We've added [a guide on design report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md), commonly applicable to undergraduate engineering assignments.
