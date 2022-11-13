@@ -47,7 +47,7 @@ Ensure your results are clear and nicely presented. Think back to your introduct
 Also try to avoid showing too much: if you have several plots that add minimal value to your report (either due to legibility or content), avoid including them. This includes results in the appendix. Avoid having an almost-infinite appendix of unmentioned results. Each plot in your report should be mentioned or referred to somewhere. If it's not, think about what value it's adding to your report.
 
 #### Discussion
-Tie together your introduction, motivation, any hypotheses, and your results to really pull as much as you can from the results. Again, think about the purpose of the report and who your audience is (see [The Marker's Perspective section above](https://github.com/nackjaylor/formatting_tips-tricks/edit/main/ReportWritingTips.md#the-markers-perspective)).
+Tie together your introduction, motivation, any hypotheses, and your results to really pull as much as you can from the results. Again, think about the purpose of the report and who your audience is (see [The Marker's Perspective section above](#the-markers-perspective)).
 
 Some other things to think about:
 - What do these results mean? Show, describe. Be specific: avoid 'x is a bit bigger than y' in favour of 'x is 10% greater than y'
