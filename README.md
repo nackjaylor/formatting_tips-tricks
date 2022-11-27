@@ -235,6 +235,7 @@ A good rule is to not use any operator for a multiplication (matrix or scalar). 
 
 - [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf): A great resource by the University of Waterloo. Format matrix expressions as in this book.
 - [`physics` LaTeX Package](http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/physics/physics.pdf): This wraps some common matrix expressions, derivatives etc. up in commands. Well worth using.
+- ["What's wrong with these equations?"](http://www.ai.mit.edu/courses/6.899/papers/mermin.pdf): A great resource by David Mermin which is included with a lot of journal/conference template how-to's. Treat your maths as prose, number everything and refer to everything by a phrase - not just a number.
 
 <a name=Calculations></a>
 ## Calculations
