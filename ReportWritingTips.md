@@ -25,6 +25,10 @@ With that in mind, here's some ideas of what we typically look for as markers fo
 - - work: there's a fair chance that your manager/the person making decisions may not have an engineering background. They need to be able to understand your results. If it can't be explained clearly and concisely, they'll simply dismiss you idea.
 - - academia: a high standard and professional finish is expected. When someone reads your paper, they'll probably start by reading the abstract, introduction and conclusion and running their eyes over your figures. If they consider it sufficiently unclear or don't see the relevance, they won't read it. So like in industry, prioritise clarity and readability. Try to make your content approachable (though obviously not to the point of insulting your reader).
 
+A good litmus test here is in most cases someone should be able to read your report, know exactly what you've done, exactly why you've done it and have enough information/guidance to reproduce it with the same level of expertise as when you were given the assignment. Let's pretend you wanted to redo the assignment but lost all code, computations etc. and only had your report (minus appendix) to guide you - could you read the report and reconstruct what you are missing easily? If the answer here is no, your report is not sufficiently clear, concise and/or detailed.
+
+If you are doing anything machine learning wise, you should aim to follow [The Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf) when preparing your report.
+
 <a name=section-spec-advice></a>
 ### Section-Specific Advice
 Best advice I can think of: as you read academic papers, find some that you like, identify what you like about them and try to encorporate those features into your writing style.
