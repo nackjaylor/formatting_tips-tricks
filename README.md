@@ -306,6 +306,7 @@ An aside: if you do come across old code which no longer works (or code for a di
 - [Cookiecutter for Project Templates](https://github.com/cookiecutter/cookiecutter): If you don't have your own project templates for C++/Python/C etc. this is a good way to get some existing templates which are more modern. Some of the old Google project templates for C++ are good too: [projects](https://code.google.com/archive/p/cpp-project-template/) and [libraries](https://code.google.com/archive/p/cpp-library-project-template/).
 - [Robostack - Reproducability for Robotics](https://robostack.github.io/):  If you're writing major projects, you may wish to consider the reproducability of your environment across platforms and development environments.
 - [Extra documentation in documents](https://developers.google.com/style): To document how someone might use what you've built you usually put together a kind a manual. This is a good reference for how to put this together for code and to show in a document how one might use your program. 
+- [The Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf): Whilst intended for academic papers, this should also be something you consider when discussing results related to machine/deep learning.
 
 <a name=Content></a>
 ## Report Content
