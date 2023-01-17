@@ -307,6 +307,7 @@ An aside: if you do come across old code which no longer works (or code for a di
 - [Robostack - Reproducability for Robotics](https://robostack.github.io/):  If you're writing major projects, you may wish to consider the reproducability of your environment across platforms and development environments.
 - [Extra documentation in documents](https://developers.google.com/style): To document how someone might use what you've built you usually put together a kind a manual. This is a good reference for how to put this together for code and to show in a document how one might use your program. 
 - [The Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf): Whilst intended for academic papers, this should also be something you consider when discussing results related to machine/deep learning.
+- [Releasing Research Code (Papers With Code)](https://github.com/paperswithcode/releasing-research-code): Also intended for academic papers, but provides good general guidelines for ensuring the code you are releasing (in this case for marking) is usable, worthwhile and has everything attached.
 
 <a name=Content></a>
 ## Report Content
