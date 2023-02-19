@@ -272,6 +272,7 @@ You should not have any numbers (except coefficients) until the last 2 lines of 
 
 <a name=Code></a>
 ## Code
+There is no one way to write good code and we do not claim that the below section covers all topics. However, we hope that the points listed below are informative and are useful in creating good coding habits. 
 
 ### Screenshots of code/terminals
 A no-go unless specifically asked for. This can cause issues because text is not machine readable and cannot go through plagiarism checking software. To someone reading it, there is little to no benefit as we don't know whether the code runs or how it fits into the broader picture. Instead, if you want to explain how you implemented some code you should do so mathematically or [use a pseudocode listing](https://www.overleaf.com/learn/latex/Algorithms).
