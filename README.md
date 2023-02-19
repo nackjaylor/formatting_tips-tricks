@@ -276,15 +276,22 @@ You should not have any numbers (except coefficients) until the last 2 lines of 
 ### Screenshots of code/terminals
 A no-go unless specifically asked for. This can cause issues because text is not machine readable and cannot go through plagiarism checking software. To someone reading it, there is little to no benefit as we don't know whether the code runs or how it fits into the broader picture. Instead, if you want to explain how you implemented some code you should do so mathematically or [use a pseudocode listing](https://www.overleaf.com/learn/latex/Algorithms).
 
-If it is specifically asked for - screenshots are still not recommended! Use a code block with indicative output formatted *like* a terminal: much easier to follow and highlightable within a document. Use [Google's command-line syntax](https://developers.google.com/style/code-syntax) as best practice.
+If it is specifically asked for - screenshots are still not recommended! Use a code block with indicative output formatted *like* a terminal: much easier to follow and highlightable within a document. Use [Google's command-line syntax](https://developers.google.com/style/code-syntax) as best practice. 
 
 ### Do it once, do it well
-If you find yourself writing the same code more than once, or copying large chunks of it - you are doing something wrong. If it's used more than once, you should have it as a function in your code.
+If you find yourself writing the same code more than once, or copying large chunks of it - you are doing something wrong. If it's used more than once, you should have it as a function in your code. Good code design here checks that the input is sensible: for example, you don't want complex numbers when functions should be in the real domain. You might find MATLAB's [argument validation functionality](https://au.mathworks.com/help/matlab/ref/arguments.html) worthwhile in helping to pick this up. This helps you catch bugs early, numerically speaking, and cleans up your code significantly.
 
-This can be extended to templated functions: particularly in C++. You want to write sections of code that are *as general as you can possibly make them*. This means, they should be designed to handle any valid form of data you can throw that them. This means: integers, floats, doubles, long equivalents etc. should ideally all be handled by the same code. Good code design here checks that the input is sensible: for example, you don't want complex numbers when functions should be in the real domain. You might find MATLAB's [argument validation functionality](https://au.mathworks.com/help/matlab/ref/arguments.html) worthwhile in helping to pick this up. This helps you catch bugs early, numerically speaking, and cleans up your code significantly.
-
-A natural extension here is recursion - calling the function inside of itself. This has immense speed benefits in Python (not necessarily C++ or other compiled languages), but fails spectacularly when not handled well. You should use recursion if appropriate, but you should ensure it is robust. If you're not confident with this, do it the old fashioned way.
-
+While want to write sections of code that are *as general as you can possibly make them*, however you should NOT use generalization as a repalcement for specificity. For example, in languages like C++ where typing is enforced, use this to your advantage by using function overloading to avoid implicit type conversions. 
+```cpp
+void process(double data);
+void process(int data);
+```
+In languages like C where function overloading is not available write functions for each specific type. 
+```c
+void process_double(double data);
+void process_int(int data);
+```
+Avoid using templating to achieve this (unless you really know what you're doing). In most situations where you need to process data you want to know exactly what data type you are dealing with. 
 
 
 ### Code for Appendices
@@ -306,8 +313,36 @@ With academic code - differences between what is published and results you get o
 
 An aside: if you do come across old code which no longer works (or code for a different OS) - [a Docker environment](https://www.docker.com/) can be configured to recreate operating systems inside of a host machine.
 
-### Coding Style Resources
+### Workflows and Styling
+Developing your own code workflow or pipeline (how you write code) is important to help you become a better coder, as well as prdocuding code and results faster. Equally as important is developing code that is easy to read and understand as this is more likely to result in better marks. Some good workflow tips include
 
+- Many IDE’s have plugins to aid with commenting and formatting. For example VSCode has a plugin to generate appropriately formatted function and class comments. Use this.
+```python
+def my_amazing_function(*args):
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
+    return None
+```
+```cpp
+/**
+ * @brief 
+ * 
+ * @param input const std::string&
+ */
+void myAmazingFunction(const std::string& input);
+```
+- Use [black](https://black.readthedocs.io/en/stable/) or [clang-format](https://www.kernel.org/doc/html/next/process/clang-format.html) to automatically format your code according to a specification. __There should be no reason to submit poorly formatted code__. See [resources](./resources/) for an example `.clang-format` file.
+- Use git. Seriously, please use it. 
+- As part of using git, consider using [pre-commit](https://pre-commit.com/) hooks - these allow hooks to be run automatically as part of a local git commit action. Among other things, formatting via black or clang can be added to these hooks so your code is automatically formatted prior to pushing your code. See [resources](./resources/) for an bare-bones example of a `.pre-commit-config.yaml` that runs a number of file checks as as well running clang and black formatting. 
+- If you use python are are not familar with the [Typing](https://docs.python.org/3/library/typing.html) module, we highly suggest you become so. This module provides runtime support for type hints and can be used by IDE's and linters, as well as making your python code significantly more readable. 
+
+
+
+### Coding Style Resources
+We do not expect students to follow one style guide in particular, but code should be formatted __consistently__ across submissions.
 - [Google's Styleguides](https://google.github.io/styleguide/): You should aim to follow this as closely as possible in terms of the amount of comments you need and the quality of coding style.
 - [The Good Research Code Book](https://goodresearch.dev/): You should also use this to help guide how you document your code and split it up. Research/academic code can be atrocious to read through - it's written by people who think things are easy/logical which are not. Format by this guide.
 - [Cookiecutter for Project Templates](https://github.com/cookiecutter/cookiecutter): If you don't have your own project templates for C++/Python/C etc. this is a good way to get some existing templates which are more modern. Some of the old Google project templates for C++ are good too: [projects](https://code.google.com/archive/p/cpp-project-template/) and [libraries](https://code.google.com/archive/p/cpp-library-project-template/).
