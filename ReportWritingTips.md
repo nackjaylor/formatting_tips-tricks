@@ -1,4 +1,4 @@
-# Academic Report Writing
+# Engineering Report Writing
 This page is to provide some tips on how to approach or just improve your academic report writing. This is intended for engineering undergraduate students and is to encourage you towards the standard expected in academic papers. Each subject is different, but for a subject that requests a design report/a report that goes beyond detailing implementation, this should be applicable. I reckon some of this advice will be useful towards undergraduate theses too.
 
 #### Contents:

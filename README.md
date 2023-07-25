@@ -8,8 +8,9 @@ Our intention for this repo is to give you an idea of best practice with regards
 ## Supplementary Guides
 We've added two supplementary guides to expand to less of the semantics, and more to the mechanics of various sorts of communication.
 
-- [Design report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md): these are tips directly for the writing of an engineering report - how to phrase, what to include, how to be clear, precise etc.
+- [Engineering report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md): these are tips directly for the writing of an engineering report - how to phrase, what to include, how to be clear, precise etc.
 - [Presentations - slides/content, practice and presenting](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/PresentationTips.md): these tips are intended to help you create flexible, engaging and audience appropriate presentations.
+- [Literature reviews](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/LitReviewTips.md): do not write regurgitative literature reviews.
 
 
 ## Contents
