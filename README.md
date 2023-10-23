@@ -16,13 +16,14 @@ We've added two supplementary guides to expand to less of the semantics, and mor
 ## Contents
 - [LaTeX](#LaTeX)
 - [Font & Typeface](#Font)
+- [Report Content](#Content)
 - [Citations and Cross-Referencing](#Citations)
 - [Figures](#Figures)
 - [Tables](#Tables)
 - [Mathematics](#Mathematics)
 - [Calculations](#Calculations)
 - [Code](#Code)
-- [Report Content](#Content)
+
 
 
 <a name=LaTeX></a>
@@ -41,6 +42,18 @@ We'll assume for the rest of this document that you've made the decision to use 
 - [USYD Report Template for LaTeX](https://github.com/nackjaylor/USYDReport_Template): passed around since 2018. A good template for reports, assignments, problem sets etc. Customise it as you see fit. Only use if the report does not specify a template.
 - [An Intro to LaTeX](https://www.youtube.com/watch?v=NJEnvQmWVac): a brief intro to LaTeX showing what it can do, and why it's worthwhile learning along with how to get started. [You can find the slides here](https://nackjaylor.github.io/assets/AIAALaTeX2021.pdf).
 - [TeXnique](https://texnique.xyz/): a nice game to familiarise/challenge yourself with typing maths in LaTeX and learning the symbols.
+
+<a name=Content></a>
+## Report Content
+We've added [a guide on design report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md), commonly applicable to undergraduate engineering assignments.
+
+A lot of people struggle to write content that is professional, and audience appropriate. You should be clear, concise and purposeful in your writing. This means that you actually need to plan what will be written, use language that is able to be understood by the audience and be lean in your language: do not write for the sake of writing. Use active voice where appropriate, and make it clear who and what throughout. Do not change tense, or voice partway through.
+
+A good piece of text should be direct, but smooth and flowing.
+
+### Resources
+- [Australian Government Style Guide](https://styleguide.gov.au): Mostly targeted for writing Government reports, but some great tips on language, punctuation, structure and purpose. Well worth a read, use it as a secondary resource for some of these basic language tips.
+
 
 <a name=Font></a>
 ## Font & Typeface
@@ -353,6 +366,4 @@ We do not expect students to follow one style guide in particular, but code shou
 - [The Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf): Whilst intended for academic papers, this should also be something you consider when discussing results related to machine/deep learning.
 - [Releasing Research Code (Papers With Code)](https://github.com/paperswithcode/releasing-research-code): Also intended for academic papers, but provides good general guidelines for ensuring the code you are releasing (in this case for marking) is usable, worthwhile and has everything attached.
 
-<a name=Content></a>
-## Report Content
-We've added [a guide on design report writing](https://github.com/nackjaylor/formatting_tips-tricks/blob/main/ReportWritingTips.md), commonly applicable to undergraduate engineering assignments.
+
