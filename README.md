@@ -284,6 +284,14 @@ This should go without saying but - only substitute at the last step. Working th
 
 You should not have any numbers (except coefficients) until the last 2 lines of working. The second last line can be one of 2 things: a calculator readout prior to rounding or a value substitution. Often, this is unnecessary: it merely shows where you calculation may have gone wrong. The final line should be the numeric answer with any units. 
 
+### Metrics
+Sometimes it is important to calculate some value to evaluate how good something is. Do not invent new metrics if you do not need to - many things are well established in statistics, physics, engineering and have ways to compare between values. Use metrics which are well known, recognisable and meaningful, and always explain why you are using them.
+
+Where can you find these metrics? Textbooks and papers in the field usually - it is rare for a new metric to be invented, but when it is there is often good reason. Metrics can be field specific - try not to crosspollinate if you can, they might have the same metric with a different name!
+
+### Helpful Resources
+- [OECD AI Policy Observatory Metrics](https://oecd.ai/en/catalogue/metrics): The OECD AI Policy Observatory maintains an excellent resource explaining common metrics used in AI, and their interpretation.
+
 <a name=Code></a>
 ## Code
 There is no one way to write good code and we do not claim that the below section covers all topics. However, we hope that the points listed below are informative and are useful in creating good coding habits. 
