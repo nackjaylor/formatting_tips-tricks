@@ -178,7 +178,7 @@ Fig. Astronauts on the Apollo 11 Lunar mission used f/0.7 lenses to image both i
   </div>
   
 ### Titles/Axes
-Every graph should have a title and an axis. Some images and results containing images should similarly have titles when comparing different methods or axes when referring to specific parts of an image, or when the image has a scale/known dimension.
+Every graph should have a title and an axis. The only case where you can omit a title is if you have a descriptive caption, and ideally as you progress towards the senior years of engineering, you will have a caption and no title. Some images and results containing images should similarly have titles/labels when comparing different methods or axes when referring to specific parts of an image, or when the image has a scale/known dimension.
 
 The title and axes should be in keeping with the rest of your document: especially with font size and ideally with font type also. This means: small images, should still have appropriately sized titles/labels. Which of the below would you rather see in a book?
 
@@ -189,7 +189,10 @@ The title and axes should be in keeping with the rest of your document: especial
 <img src="https://user-images.githubusercontent.com/35677585/164344916-d436fe0c-c1af-47c8-b19e-3c71d3b6bef3.png" width="400"/>
   </div>
   
-  Ensure your axes are scaled appropriately: for example, if there are large changes in magnitude, you may wish to use a logarithmic axis. Ensure that scaling of axes makes sense - if you have changes between measurements on the scale of centimeters, an axes measured in metres with a strange power multiplier is not appropriate.
+  Ensure your axes are scaled appropriately: for example, if there are large changes in magnitude, you may wish to use a logarithmic axis. Ensure that scaling of axes makes sense - if you have changes between measurements on the scale of centimeters, an axes measured in metres with a strange power multiplier is not appropriate. Your axes should be labelled and have a scale.
+
+## Captions
+If you opt for no title, your figure should be accompanied with a descriptive caption that fully explains what is presented, what this means and how it relates to the rest of the text. Every figure should be described in the caption, but discussed in the text. The follow on for this: if you have a figure which is not referenced in the text, you're either missing some text or you have one extra figure. All your images should serve a purpose in the main body of your text, it is not sufficient to just have an image on its own.
 
 ### Graphs & Grids
 Any graph should have gridlines presented - whether it be 2D or 3D. The shape of functions and the location of key points such as minima and maxima is critical to fields like optimisation, dynamical systems and machine learning. For this reason, make it easy on your reader by providing gridlines that their eyes can follow and use to immediately locate key points of interest.
