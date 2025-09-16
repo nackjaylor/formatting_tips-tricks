@@ -105,6 +105,8 @@ In the `matlab/` directory of this repository, you will find default plotting fu
 
 In the `python/` folder you will find a `format_figures.py` module with a `startup_plotting` function to achieve similar defaults. Note here that in order to do LaTeX formatting, you will need an installed LaTeX distribution (TeXlive for those on Linux is a great option!).
 
+Also - the [SciencePlots](https://github.com/garrettj403/SciencePlots) has now supplanted the above code in some of our research workflows - you might also find it very useful in professionally formatting your figures out of the box.
+
 ### No Screenshots of Figures or Photos of Screens
 As per the title - don't do it.
 
@@ -165,11 +167,10 @@ An important thing to note: never cover important parts of an image/plot. Take t
 If you have an image it should have a caption which gives the reader some interpretation of what is presented to them. You should have selected the figure for a purpose, and therefore will have an understanding of what you think it adds to the main body of text. It doesn't have to (and shouldn't!) be paragraphs long, but a sentence or two of clear and direct description with a link to the main body is necessary.
 
 Take the below for example:
-<div align="center"><img src="https://history.nasa.gov/ap11ann/kippsphotos/5948.jpg"></div>
+<div align="center"><img src="https://www.nasa.gov/wp-content/uploads/static/history/alsj/a11/AS11-40-5948HR.jpg"></div>
 <div align="center">
 Fig. Apollo 11 on the Moon.
   </div>
-
 
 vs.
 
@@ -209,6 +210,7 @@ All graphs should have a legend if they display more than one trend line, or typ
 - [draw.io](https://draw.io): free online diagram maker. You can render mathematics and have 3D blocks. Able to produce publication quality diagrams.
 - [Scientific Visualisation with Python](https://github.com/rougier/scientific-visualization-book): Great free book all about customising Python + Matplotlib to be visually appealing, and give you really strong visual results. Well worth a flick through.
 - [Repeatable plotting with Pylustrator](https://pylustrator.readthedocs.io/en/latest/): If you're making a plot, it's often hard to configure in terms of code, and hard to reconfigure if you don't save it. Pylustrator is a handy package where you can use a GUI to configure subplots and then write a script to reproduce that plot exactly.
+- [SciencePlots](https://github.com/garrettj403/SciencePlots): out of the box formatting which matches style guides of various journals/conferences. You might also choose to customise this.
 
 <a name=Tables></a>
 ## Tables
@@ -225,6 +227,7 @@ This comes with a caveat: for most purposes I would follow this minimalist style
 ### Tools
 
 - [Excel2LaTeX](https://github.com/ivankokan/Excel2LaTeX): Format tables in Excel in terms of colours, bolding, alignment and then convert directly to LaTeX.
+
 
 <a name=Mathematics></a>
 ## Mathematics
